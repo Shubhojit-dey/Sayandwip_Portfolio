@@ -2,7 +2,7 @@
 export default function Quota() {
   return (
     <div className="quote-container">
-    <div className="quote-box">
+    <div style={{padding:"1% 20%"}} className="quote-box">
       {/* Top-left quote mark */}
       <span className="quote-symbol quote-symbol-left">“</span>
 
@@ -10,7 +10,7 @@ export default function Quota() {
       <span className="quote-symbol quote-symbol-right">”</span>
 
       {/* Main quote text */}
-      <p className="quote-text">With great power comes great electricity bill</p>
+      <p className="quote-text">stop dreaming start doing</p>
 
       {/* Author in bottom-right corner */}
       <div className="quote-author">- Dr. Who</div>
