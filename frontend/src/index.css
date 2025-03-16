@@ -53,6 +53,9 @@ body {
   text-transform: uppercase;
 }
 
+.navbar-brand:hover{
+  color: #fff;
+}
 /* Nav links (right side) */
 .navbar-links {
   list-style: none;

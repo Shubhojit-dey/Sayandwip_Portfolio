@@ -1,15 +1,7 @@
 {
-    "headers": {
-      "/*": {
-        "Content-Security-Policy": "default-src 'self'",
-        "X-Frame-Options": "DENY"
-      }
-    },
-    "routes": [
-      {
-        "src": "/.*",
-        "dest": "/index.html",
-        "status": 200
-      }
-    ]
+  "root": "dist/",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html"
   }
+}
