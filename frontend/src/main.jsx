@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css'
 
 import Navbar from './landing/Navbar';
@@ -12,7 +12,7 @@ import ProjectPage from './landing/Projects/ProjectPage';
 
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <Router>
     <Navbar />
     <LeftSidebar />
     <Routes>
@@ -21,5 +21,5 @@ createRoot(document.getElementById('root')).render(
       <Route path="/about-me" element={<AboutPage />} />
     </Routes>
    <Footer />
-  </BrowserRouter>
+  </Router>
 )
