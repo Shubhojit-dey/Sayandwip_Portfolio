@@ -1,5 +1,12 @@
 .image{
+  transition: all 0.3s ease;
+  cursor: pointer;
   width: 7%;
   margin-top: 1rem;
   padding-right: 1rem;
+}
+
+.image:hover {
+  transform: scale(1.15) translateY(-5px);
+  filter: drop-shadow(0 4px 8px rgba(255, 64, 129, 0.4));
 }
