@@ -1,0 +1,75 @@
+/* components/FunFacts.module.css */
+.section {
+    padding: 4rem 0;
+    background-color: #1F2029; 
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  .title {
+    font-size:2.1rem;
+    margin-bottom: 3rem;
+    color:white;
+  }
+  
+  .factsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .factCard {
+    background:pink;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .factCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .factNumber {
+    width: 40px;
+    height: 40px;
+    background: #0984e3;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .factText {
+    font-size: 1.1rem;
+    color: #2d3436;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+    
+    .factsGrid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .factCard {
+      padding: 1.5rem;
+    }
+  }

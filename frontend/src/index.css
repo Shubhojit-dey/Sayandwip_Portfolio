@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ---------------------------
+   1. Global Reset / Basics
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #1F2029; 
+  color: #fff;
+}
+
+
+
+/* Navbar container */
+.navbar {
+  position: fixed;      /* Keeps the navbar fixed to the top */
+  top: 0;               /* Aligns it to the top edge of the viewport */
+  left: 0;              /* Aligns it to the left edge of the viewport */
+  width: 100%;          /* Make it span the full width of the page */
+  background-color: #1F2029;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;  
+}
+
+/* Brand name (left side) */
+.navbar-brand {
+  color: #fff;
+  padding-left: 10%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Nav links (right side) */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  font-size: 1.3rem;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding-right: 10%;
+  opacity: 0.5;
+}
+
+/* Individual link styling */
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar-links li a:hover {
+  color: #ff4081; /* Pink accent on hover */
+  opacity: 1;
+}
+
+/* Container that holds both text and image */
+.hero-container {
+  display: flex;               /* Enables side-by-side layout */
+  align-items: center;         /* Vertically centers items in the container */
+  justify-content: center;     /* Horizontally centers items in the container */
+  gap: 2rem;                   /* Space between text and image */
+ 
+  background-color: #1F2029;   /* Dark background (optional) */
+  padding: 3rem 1rem;          /* Spacing around the section */
+  color: #fff;                 /* Default text color: white */
+}
+
+/* Text block styling */
+.hero-text {
+  max-width: 500px;            /* Limit width for nicer readability */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Highlighted (pink) text */
+.highlight {
+  color: #ff4081;              /* Vibrant pink color */
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+/* Call-to-action button */
+.hero-button {
+  background: transparent;
+  border: 2px solid #ff4081;
+  color: #ff4081;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero-button:hover {
+  background-color: #ff4081;
+  color: #1F2029;
+}
+
+/* Image styling */
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;    /* Stack text & image vertically */
+  }
+
+  .hero-image img {
+    margin-top: 2rem;         /* Space above image when stacked */
+  }
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2029; /* Dark bluish-gray */
+  width: 100vh;
+  padding: 2rem;
+  margin-left: 23%;
+}
+
+.quote-box {
+  position: relative;
+  border: 1px solid #ccc;    /* Light gray border */
+  padding: 1rem;
+  max-width: 600px;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+/* Top-left quote mark */
+.quote-symbol-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Top-right quote mark (flipped horizontally) */
+.quote-symbol-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%) rotateY(180deg);
+}
+
+/* Shared styles for both quote symbols */
+.quote-symbol {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/* Main quote text, centered */
+.quote-text {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Author in bottom-right corner */
+.quote-author {
+  margin-top: 50%;
+  border: 1px solid #ccc;    /* Light gray border */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  color: #ccc;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+
+
+/* components/SocialLinks.css */
+.fixed-social {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  color: #888;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #fff;
+}
