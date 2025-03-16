@@ -10,10 +10,10 @@ export default function Quota() {
       <span className="quote-symbol quote-symbol-right">”</span>
 
       {/* Main quote text */}
-      <p className="quote-text">stop dreaming start doing</p>
+      <p className="quote-text"><span className="highlight">STOP</span> DREAMING <span className="highlight">START</span> DOING</p>
 
       {/* Author in bottom-right corner */}
-      <div className="quote-author">- Dr. Who</div>
+      {/* <div className="quote-author">- Dr. Who</div> */}
     </div>
   </div>
   )

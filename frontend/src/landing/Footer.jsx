@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub,faInstagram } from '@fortawesome/free-brands-svg-icons';
 import styles from "../landing/Styles/Footer.module.css";
 
 const Footer = () => {
@@ -17,9 +17,9 @@ const Footer = () => {
 
           <div className={styles.footerSection}>
             
-            <a href="mailto:Sayandwipdebnath.artofficial@gmail.com" className={styles.email}>
+            {/* <a href="mailto:Sayandwipdebnath.artofficial@gmail.com" className={styles.email}>
             Sayandwipdebnath.artofficial@gmail.com
-            </a>
+            </a> */}
           </div>
 
           <div className={styles.footerSection}>
@@ -31,8 +31,8 @@ const Footer = () => {
               <a href="https://github.com/sayandwip2004" className={styles.iconLink}>
                 <FontAwesomeIcon icon={faGithub} className={styles.icon} />
               </a>
-              <a href="#" className={styles.iconLink}>
-                <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
+              <a href="https://www.instagram.com/sayandwip.art/" className={styles.iconLink}>
+                <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
               </a>
             </div>
           </div>

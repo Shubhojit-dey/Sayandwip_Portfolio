@@ -3,7 +3,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Left: Brand Name */}
-      <div className="navbar-brand">Sayandwip</div>
+      <div className="navbar-brand"></div>
 
       {/* Right: Nav Links */}
       <ul className="navbar-links">

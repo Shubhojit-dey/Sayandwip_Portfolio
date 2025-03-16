@@ -39,7 +39,7 @@ const Contact = () => {
               style={{textDecoration:"none"}}
             >
               <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
-              &nbsp;<span style={{textDecoration:"none"}}>Let's Connect on Linkedin!</span>
+              &nbsp;<span style={{textDecoration:"none"}}>Linkedin</span>
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 // components/SocialLinks.jsx
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin,faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 const  LeftSidebar = () => {
@@ -19,8 +19,8 @@ const  LeftSidebar = () => {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} className="social-link" />
+          <a href="https://www.instagram.com/sayandwip.art/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="social-link" />
           </a>
         </li>
       </ul>
