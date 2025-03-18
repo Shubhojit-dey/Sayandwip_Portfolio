@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Text Section */}
       <div className="hero-text">
         <h1>
-        Hi I'm Sayandwip an <span className="highlight">android app</span>{" "}
+        Hi I'm Sayandwip, an <span className="highlight">Android app</span>{" "}
           developer
         </h1>
         <p>He architects Android ecosystems where scalability bridges functionality and flair.</p>
